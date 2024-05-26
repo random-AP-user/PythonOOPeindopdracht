@@ -41,16 +41,11 @@ function updateTable() {
     data.forEach((e, value) => {
         const party = e.party;
         const seatsWon = Math.round(e.votes / worth);
-        for (let i = 0; i < seatsWon; i++) {
+        for (let i = 0; i < seatsWon+1; i++) {
             backendTable.push({ "party": party, "color": colors[value], "seatswon": seatsWon });
         }
     });
 
-    if (seats != backendTable.length){
-        for(let i = 0; i <= seats - backendTable.length; i++){
-            backendTable.push({ "party": "Lege zetel", "color": " #DCEBCB", "seatswon": 0 });
-        }
-    }
 
     perc.innerHTML = `${Math.floor((worth / totalVotes) * 10000) / 100}%`;
 
