@@ -27,15 +27,15 @@
 
 ### 1. ```main.py```
 
-    In dit bestand word alles geactiveerd en doorgegeven. Het haalt alle kiezers uit "./json/voters.json" om dan met dit bestand de rest van de code te kunnen uitvoeren
+In dit bestand word alles geactiveerd en doorgegeven. Het haalt alle kiezers uit "./json/voters.json" om dan met dit bestand de rest van de code te kunnen uitvoeren
 
 ### 2. ```voters.py```
 
-    voor dat de class "voters" aangemaakt word maakt men een class "voter" voor iedere kiezer daar word de naam, achternaam en leeftijd van de JSON ingestoken met een extra variabel voor hun ID te bepalen.
+voor dat de class "voters" aangemaakt word maakt men een class "voter" voor iedere kiezer daar word de naam, achternaam en leeftijd van de JSON ingestoken met een extra variabel voor hun ID te bepalen.
 
 ### 3. ```parties.py```
 
-    Na da alle de class voters is gemaakt gaat men er paar willekeurige mensen er uitkiezen om dan er een kandidaat van te maken. deze kandidaat word dan in hun class "party" gestoken en om alles bij te houden word er een class "parties" gemaakt.
+Na da alle de class voters is gemaakt gaat men er paar willekeurige mensen er uitkiezen om dan er een kandidaat van te maken. deze kandidaat word dan in hun class "party" gestoken en om alles bij te houden word er een class "parties" gemaakt.
 
 ### 4. ```chipcard.py```
 
