@@ -5,10 +5,15 @@ const [slider, input] = document.querySelectorAll("input");
 let seats = slider.value;
 const perc = document.querySelector("#percentage");
 let data;
+const colors = [];
 
 async function fetchData() {
     const res = await fetch(file);
     data = await res.json();
+    
+    data.forEach(e => {
+        colors.push(getRandomColor());
+    });
     updateTable();
 }
 
@@ -21,6 +26,7 @@ function getRandomColor() {
         color += letters[Math.floor(Math.random() * letters.length)];
     }
     return color;
+
 }
 
 function updateTable() {
@@ -32,12 +38,13 @@ function updateTable() {
     let worth = totalVotes / seats;
     let tr;
 
-    data.forEach(e => {
+    data.forEach((e, value)=> {
         const party = e.party;
+        console.log('party', party, value)
         const seatsWon = Math.round(e.votes / worth);
-        let color = getRandomColor();
-        for (let i = 0; i <= seatsWon; i++) {
-            backendTable.push({ "party": party, "color": color, "seatswon": seatsWon });
+        console.log('seats', seats)
+        for (let i = 0; i < seatsWon; i++) {
+            backendTable.push({ "party": party, "color": colors[value], "seatswon": seatsWon });
         }
     });
 
