@@ -10,7 +10,7 @@ const colors = [];
 async function fetchData() {
     const res = await fetch(file);
     data = await res.json();
-    
+
     data.forEach(e => {
         colors.push(getRandomColor());
     });
@@ -38,21 +38,26 @@ function updateTable() {
     let worth = totalVotes / seats;
     let tr;
 
-    data.forEach((e, value)=> {
+    data.forEach((e, value) => {
         const party = e.party;
-        console.log('party', party, value)
         const seatsWon = Math.round(e.votes / worth);
-        console.log('seats', seats)
         for (let i = 0; i < seatsWon; i++) {
             backendTable.push({ "party": party, "color": colors[value], "seatswon": seatsWon });
         }
     });
 
+    if (seats != backendTable.length){
+        for(let i = 0; i <= seats - backendTable.length; i++){
+            backendTable.push({ "party": "Lege zetel", "color": " #DCEBCB", "seatswon": 0 });
+        }
+    }
+
     perc.innerHTML = `${Math.floor((worth / totalVotes) * 10000) / 100}%`;
 
     for (let i = 0; i < seats; i++) {
         const td = document.createElement("td");
-        td.appendChild(document.createTextNode(backendTable[i].party || "empty seat"));
+        td.appendChild(document.createTextNode(backendTable[i].party));
+
         td.style.backgroundColor = backendTable[i].color;
         if (i == 0 || i % 10 == 0) {
             tr = document.createElement("tr");
