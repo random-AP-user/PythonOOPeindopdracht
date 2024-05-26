@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VotingList</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Uitslag verkiezingen</h1>
+        <div class="slidecontainer">
+            <span>Aantal beschikbare zetels: </span>
+            <div style="padding-top: 2px;">
+                <input type="range" min="1" max="100" value="50" step="1" class="slider" id="playbackSpeed">
+            </div>
+            <input type="number" min="1" value="50" class="number" id="playbackSpeed" placeholder="amount of seats">
+        </div>
+        <h2>The minimum amount you need is <span id="percentage">0%</span></h2>
+    </header>
+    <main>
+        <div id="containerTable">
+            <table>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
