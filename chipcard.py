@@ -10,5 +10,5 @@ class Chipcard:
         self.code = code
     def makeFresh(self):
         self.code = None
-    def __repr__(self) -> str:
+    def __repr__(self):
         return self.chipID

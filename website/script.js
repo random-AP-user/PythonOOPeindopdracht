@@ -10,7 +10,7 @@ const colors = [];
 async function fetchData() {
     const res = await fetch(file);
     data = await res.json();
-
+    console.log(data);
     data.forEach(e => {
         colors.push(getRandomColor());
     });
@@ -39,10 +39,9 @@ function updateTable() {
     let tr;
 
     data.forEach((e, value) => {
-        const party = e.party;
         const seatsWon = Math.round(e.votes / worth);
-        for (let i = 0; i < seatsWon+1; i++) {
-            backendTable.push({ "party": party, "color": colors[value], "seatswon": seatsWon });
+        for (let i = 0; i < seatsWon + 1; i++) {
+            backendTable.push({ "party": e.party, "candidates": e.candidates, "color": colors[value], "seatswon": seatsWon });
         }
     });
 
@@ -51,15 +50,25 @@ function updateTable() {
 
     for (let i = 0; i < seats; i++) {
         const td = document.createElement("td");
-        td.appendChild(document.createTextNode(backendTable[i].party));
+        const p = document.createElement("p");
+        const ul = document.createElement("ul");
+        p.appendChild(document.createTextNode(`${backendTable[i].party}`));
+        td.appendChild(p);
+        const candidate = backendTable[i].candidates[i%10].name;
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(`${i+1}: ${candidate}`));
+        ul.appendChild(li);
+    
 
-        td.style.backgroundColor = backendTable[i].color;
-        if (i == 0 || i % 10 == 0) {
-            tr = document.createElement("tr");
-        }
-        tr.appendChild(td);
-        table.appendChild(tr);
-    };
+    td.appendChild(ul);
+
+    td.style.backgroundColor = backendTable[i].color;
+    if (i == 0 || i % 10 == 0) {
+        tr = document.createElement("tr");
+    }
+    tr.appendChild(td);
+    table.appendChild(tr);
+};
 }
 
 slider.addEventListener("input", () => {

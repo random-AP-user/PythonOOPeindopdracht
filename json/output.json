@@ -1,1 +1,338 @@
-[{"party": "Enclave", "votes": 410, "candidates": [{"name": "Lotte Smit", "totalRank": 140, "votes": 40}, {"name": "Julia van der Linden", "totalRank": 115, "votes": 35}, {"name": "Willem Jansen", "totalRank": 118, "votes": 38}, {"name": "Jan Smit", "totalRank": 105, "votes": 35}, {"name": "Hendrik de Jong", "totalRank": 96, "votes": 26}, {"name": "Lisa van Dijk", "totalRank": 112, "votes": 52}, {"name": "Bjorn de Graaf", "totalRank": 86, "votes": 46}, {"name": "Eva Kramer", "totalRank": 56, "votes": 26}, {"name": "Mats Kramer", "totalRank": 51, "votes": 21}, {"name": "Hendrik van Leeuwen", "totalRank": 59, "votes": 39}]}, {"party": "The Institute", "votes": 186, "candidates": [{"name": "Mats Kramer", "totalRank": 118, "votes": 18}, {"name": "Lisa van Dijk", "totalRank": 114, "votes": 14}, {"name": "Jan Smit", "totalRank": 101, "votes": 21}, {"name": "Bjorn de Graaf", "totalRank": 102, "votes": 22}, {"name": "Willem Jansen", "totalRank": 87, "votes": 17}, {"name": "Hendrik van Leeuwen", "totalRank": 90, "votes": 20}, {"name": "Eva Kramer", "totalRank": 72, "votes": 12}, {"name": "Julia van der Linden", "totalRank": 50, "votes": 20}, {"name": "Lotte Smit", "totalRank": 51, "votes": 21}, {"name": "Hendrik de Jong", "totalRank": 29, "votes": 19}]}, {"party": "Commonwealth Minutemen", "votes": 157, "candidates": [{"name": "Jan Smit", "totalRank": 110, "votes": 10}, {"name": "Eva Kramer", "totalRank": 103, "votes": 13}, {"name": "Hendrik de Jong", "totalRank": 72, "votes": 12}, {"name": "Lotte Smit", "totalRank": 63, "votes": 23}, {"name": "Hendrik van Leeuwen", "totalRank": 52, "votes": 22}, {"name": "Julia van der Linden", "totalRank": 45, "votes": 15}, {"name": "Bjorn de Graaf", "totalRank": 36, "votes": 16}, {"name": "Mats Kramer", "totalRank": 23, "votes": 13}, {"name": "Willem Jansen", "totalRank": 20, "votes": 10}, {"name": "Lisa van Dijk", "totalRank": 13, "votes": 13}]}, {"party": "The railroad", "votes": 150, "candidates": [{"name": "Mats Kramer", "totalRank": 114, "votes": 14}, {"name": "Jan Smit", "totalRank": 113, "votes": 13}, {"name": "Lotte Smit", "totalRank": 104, "votes": 14}, {"name": "Lisa van Dijk", "totalRank": 102, "votes": 12}, {"name": "Eva Kramer", "totalRank": 85, "votes": 15}, {"name": "Julia van der Linden", "totalRank": 82, "votes": 22}, {"name": "Willem Jansen", "totalRank": 60, "votes": 20}, {"name": "Hendrik de Jong", "totalRank": 50, "votes": 10}, {"name": "Bjorn de Graaf", "totalRank": 28, "votes": 8}, {"name": "Hendrik van Leeuwen", "totalRank": 22, "votes": 12}]}, {"party": "Brotherhood of Steel", "votes": 149, "candidates": [{"name": "Willem Jansen", "totalRank": 95, "votes": 15}, {"name": "Mats Kramer", "totalRank": 54, "votes": 14}, {"name": "Lisa van Dijk", "totalRank": 56, "votes": 16}, {"name": "Lotte Smit", "totalRank": 59, "votes": 19}, {"name": "Jan Smit", "totalRank": 54, "votes": 14}, {"name": "Bjorn de Graaf", "totalRank": 46, "votes": 16}, {"name": "Hendrik de Jong", "totalRank": 32, "votes": 12}, {"name": "Eva Kramer", "totalRank": 37, "votes": 17}, {"name": "Hendrik van Leeuwen", "totalRank": 26, "votes": 16}, {"name": "Julia van der Linden", "totalRank": 7, "votes": 7}]}, {"party": "Yes Man", "votes": 148, "candidates": [{"name": "Lotte Smit", "totalRank": 113, "votes": 13}, {"name": "Eva Kramer", "totalRank": 94, "votes": 14}, {"name": "Hendrik de Jong", "totalRank": 90, "votes": 10}, {"name": "Hendrik van Leeuwen", "totalRank": 90, "votes": 10}, {"name": "Jan Smit", "totalRank": 81, "votes": 11}, {"name": "Willem Jansen", "totalRank": 67, "votes": 7}, {"name": "Julia van der Linden", "totalRank": 73, "votes": 13}, {"name": "Mats Kramer", "totalRank": 65, "votes": 15}, {"name": "Bjorn de Graaf", "totalRank": 57, "votes": 17}, {"name": "Lisa van Dijk", "totalRank": 28, "votes": 18}]}]
+[
+    {
+        "party": "Enclave",
+        "votes": 437,
+        "candidates": [
+            {
+                "name": "Erik van der Wal",
+                "totalRank": 126,
+                "votes": 36
+            },
+            {
+                "name": "Kristof van Leeuwen",
+                "totalRank": 131,
+                "votes": 41
+            },
+            {
+                "name": "Lotte de Graaf",
+                "totalRank": 135,
+                "votes": 55
+            },
+            {
+                "name": "Willem Bakker",
+                "totalRank": 125,
+                "votes": 45
+            },
+            {
+                "name": "Maximus de Vries",
+                "totalRank": 122,
+                "votes": 42
+            },
+            {
+                "name": "Noah Jansen",
+                "totalRank": 116,
+                "votes": 36
+            },
+            {
+                "name": "Gerard van der Wal",
+                "totalRank": 99,
+                "votes": 39
+            },
+            {
+                "name": "Petra van den Berg",
+                "totalRank": 59,
+                "votes": 39
+            },
+            {
+                "name": "Joost de wit",
+                "totalRank": 55,
+                "votes": 35
+            },
+            {
+                "name": "Thijs van Leeuwen",
+                "totalRank": 35,
+                "votes": 35
+            }
+        ]
+    },
+    {
+        "party": "Commonwealth Minutemen",
+        "votes": 176,
+        "candidates": [
+            {
+                "name": "Erik van der Wal",
+                "totalRank": 96,
+                "votes": 16
+            },
+            {
+                "name": "Maximus de Vries",
+                "totalRank": 93,
+                "votes": 13
+            },
+            {
+                "name": "Thijs van Leeuwen",
+                "totalRank": 91,
+                "votes": 11
+            },
+            {
+                "name": "Willem Bakker",
+                "totalRank": 90,
+                "votes": 20
+            },
+            {
+                "name": "Kristof van Leeuwen",
+                "totalRank": 66,
+                "votes": 16
+            },
+            {
+                "name": "Petra van den Berg",
+                "totalRank": 59,
+                "votes": 9
+            },
+            {
+                "name": "Lotte de Graaf",
+                "totalRank": 54,
+                "votes": 14
+            },
+            {
+                "name": "Gerard van der Wal",
+                "totalRank": 66,
+                "votes": 26
+            },
+            {
+                "name": "Joost de wit",
+                "totalRank": 38,
+                "votes": 18
+            },
+            {
+                "name": "Noah Jansen",
+                "totalRank": 11,
+                "votes": 11
+            }
+        ]
+    },
+    {
+        "party": "The Institute",
+        "votes": 155,
+        "candidates": [
+            {
+                "name": "Erik van der Wal",
+                "totalRank": 118,
+                "votes": 28
+            },
+            {
+                "name": "Kristof van Leeuwen",
+                "totalRank": 73,
+                "votes": 13
+            },
+            {
+                "name": "Willem Bakker",
+                "totalRank": 66,
+                "votes": 16
+            },
+            {
+                "name": "Thijs van Leeuwen",
+                "totalRank": 60,
+                "votes": 10
+            },
+            {
+                "name": "Gerard van der Wal",
+                "totalRank": 55,
+                "votes": 15
+            },
+            {
+                "name": "Petra van den Berg",
+                "totalRank": 53,
+                "votes": 13
+            },
+            {
+                "name": "Maximus de Vries",
+                "totalRank": 50,
+                "votes": 20
+            },
+            {
+                "name": "Lotte de Graaf",
+                "totalRank": 35,
+                "votes": 15
+            },
+            {
+                "name": "Joost de wit",
+                "totalRank": 34,
+                "votes": 14
+            },
+            {
+                "name": "Noah Jansen",
+                "totalRank": 25,
+                "votes": 15
+            }
+        ]
+    },
+    {
+        "party": "The railroad",
+        "votes": 155,
+        "candidates": [
+            {
+                "name": "Kristof van Leeuwen",
+                "totalRank": 103,
+                "votes": 13
+            },
+            {
+                "name": "Maximus de Vries",
+                "totalRank": 91,
+                "votes": 11
+            },
+            {
+                "name": "Lotte de Graaf",
+                "totalRank": 82,
+                "votes": 12
+            },
+            {
+                "name": "Noah Jansen",
+                "totalRank": 85,
+                "votes": 15
+            },
+            {
+                "name": "Erik van der Wal",
+                "totalRank": 60,
+                "votes": 10
+            },
+            {
+                "name": "Joost de wit",
+                "totalRank": 63,
+                "votes": 13
+            },
+            {
+                "name": "Thijs van Leeuwen",
+                "totalRank": 56,
+                "votes": 16
+            },
+            {
+                "name": "Willem Bakker",
+                "totalRank": 45,
+                "votes": 15
+            },
+            {
+                "name": "Gerard van der Wal",
+                "totalRank": 23,
+                "votes": 13
+            },
+            {
+                "name": "Petra van den Berg",
+                "totalRank": 22,
+                "votes": 12
+            }
+        ]
+    },
+    {
+        "party": "Brotherhood of Steel",
+        "votes": 153,
+        "candidates": [
+            {
+                "name": "Maximus de Vries",
+                "totalRank": 102,
+                "votes": 12
+            },
+            {
+                "name": "Gerard van der Wal",
+                "totalRank": 105,
+                "votes": 15
+            },
+            {
+                "name": "Willem Bakker",
+                "totalRank": 84,
+                "votes": 14
+            },
+            {
+                "name": "Joost de wit",
+                "totalRank": 74,
+                "votes": 14
+            },
+            {
+                "name": "Kristof van Leeuwen",
+                "totalRank": 73,
+                "votes": 13
+            },
+            {
+                "name": "Lotte de Graaf",
+                "totalRank": 64,
+                "votes": 14
+            },
+            {
+                "name": "Petra van den Berg",
+                "totalRank": 53,
+                "votes": 13
+            },
+            {
+                "name": "Noah Jansen",
+                "totalRank": 48,
+                "votes": 18
+            },
+            {
+                "name": "Erik van der Wal",
+                "totalRank": 42,
+                "votes": 12
+            },
+            {
+                "name": "Thijs van Leeuwen",
+                "totalRank": 36,
+                "votes": 16
+            }
+        ]
+    },
+    {
+        "party": "Yes Man",
+        "votes": 124,
+        "candidates": [
+            {
+                "name": "Maximus de Vries",
+                "totalRank": 96,
+                "votes": 6
+            },
+            {
+                "name": "Kristof van Leeuwen",
+                "totalRank": 96,
+                "votes": 16
+            },
+            {
+                "name": "Joost de wit",
+                "totalRank": 92,
+                "votes": 12
+            },
+            {
+                "name": "Thijs van Leeuwen",
+                "totalRank": 85,
+                "votes": 15
+            },
+            {
+                "name": "Willem Bakker",
+                "totalRank": 67,
+                "votes": 7
+            },
+            {
+                "name": "Noah Jansen",
+                "totalRank": 54,
+                "votes": 14
+            },
+            {
+                "name": "Erik van der Wal",
+                "totalRank": 40,
+                "votes": 10
+            },
+            {
+                "name": "Gerard van der Wal",
+                "totalRank": 38,
+                "votes": 8
+            },
+            {
+                "name": "Petra van den Berg",
+                "totalRank": 23,
+                "votes": 13
+            },
+            {
+                "name": "Lotte de Graaf",
+                "totalRank": 19,
+                "votes": 9
+            }
+        ]
+    }
+]
