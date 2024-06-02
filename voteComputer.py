@@ -32,7 +32,7 @@ class VoteComputer:
         self.candidates = []
         
         # normally random.choice(parties.partiesList) is fine but i wanted chaos
-        chosenParty = parties.partiesList[1] if random.randint(0,4) == 0 else random.choice(parties.partiesList)
+        chosenParty = parties.partiesList[1] if random.randint(0,6) == 0 else random.choice(parties.partiesList)
         for candidate in chosenParty.candidatesList:
             if random.randint(0, 10) == 0:
                 self.candidates.append(candidate)

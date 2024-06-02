@@ -1,5 +1,4 @@
 import random
-# import json
 
 class Candidate:
     def __init__(self, canditade, rank):

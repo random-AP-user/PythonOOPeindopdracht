@@ -1,45 +1,47 @@
 from collections import Counter
-import json
+
 
 class GetResults:
     def __init__(self, allVotes):
         self.allVotes = allVotes
-    
-    def getScores(self):
-        partyVotes = [chipcard['votedParty'] for chipcard in self.allVotes]
+
+    def getScores(self, totalSeats):
+        partyVotes = [chipcard["votedParty"] for chipcard in self.allVotes]
         partyCounts = Counter(partyVotes)
         rankedParties = sorted(partyCounts.items(), key=lambda x: x[1], reverse=True)
-        ranking = []
-        for (party, votes) in rankedParties:
-            partyData = {
-                "party": party.name,
-                "votes": votes,
-                "candidates": []
-            }
-            candidateVotes = []
+
+        totalVotes = sum(partyCounts.values())
+
+        results = []
+        for party, votes in rankedParties:
+            seats = round((votes / totalVotes) * totalSeats)
+
+            preferenceVotes = []
             for vote in self.allVotes:
-                if vote['votedParty'] == party:
-                    candidateVotes.extend([candidate for candidate in vote['CandidatesPreference']])
+                if vote["votedParty"] == party:
+                    preferenceVotes.extend(vote["CandidatesPreference"])
 
-            candidateCounts = Counter(candidateVotes)
-            rankedCandidates = sorted(candidateCounts.items(), key=lambda x: (x[0].rank), reverse=True)
-            for (candidate, rank) in rankedCandidates:
-                candidateData = {
-                    "name": candidate.name,
-                    "totalRank": candidate.rank + rank,
-                    "votes": rank
-                }
-                partyData["candidates"].append(candidateData)
-            
-            ranking.append(partyData)
+            preferenceCounts = Counter(preferenceVotes).items()
 
-        with open('./json/output.json', 'w') as f:
-            json.dump(ranking, f)
+            rankedCandidates = sorted(preferenceCounts, key=lambda x: (x[0].rank, x[1]), reverse=True)
 
-    def getVotes(self):
-        for ballotReciept in self.allVotes:
-            if ballotReciept['CandidatesPreference']:
-                candidates_str = f"the candidates {', '.join(candidate.name for candidate in ballotReciept['CandidatesPreference'])}"
-            else:
-                candidates_str = "no one"
-            print(f"{ballotReciept['voter']} voted for {ballotReciept['votedParty']} and preferces {candidates_str}.")
+            candidates = []
+            amountCandidates = len(rankedCandidates)
+            for seat in range(seats):
+                if seat < amountCandidates:
+                    candidateData = {
+                        "candidate": rankedCandidates[seat % amountCandidates][0].name,
+                        "votes": rankedCandidates[seat % amountCandidates][1],
+                        "totalRank": rankedCandidates[seat % amountCandidates][0].rank
+                        + rankedCandidates[seat % 10][1],
+                        "seats": 1,
+                    }
+                    candidates.append(candidateData)
+                else:
+                    candidates[seat % amountCandidates]["seats"] += 1
+
+            results.append(
+                {"name": party, "seats": seats, "chosencandidates": candidates}
+            )
+
+        return results
